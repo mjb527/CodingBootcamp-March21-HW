@@ -1,3 +1,11 @@
+
+$(function(){
+    var $select = $("#charCount");
+    for (i=1;i<=128;i++){
+        $select.append($('<option></option>').val(i).html(i))
+    }
+});
+
 function generatePassword() {
   const selector = document.getElementById('charCount');
   const charCount = selector.options[selector.selectedIndex].value;

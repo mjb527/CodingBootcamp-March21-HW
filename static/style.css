@@ -4,6 +4,7 @@ body {
   background-size: cover;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  overflow-x: hidden;
 }
 
 img {
@@ -18,15 +19,4 @@ img {
 
 .resultDiv {
   height: 50px;
-  display: inline-flex;
-}
-
-#result {
-  height: 60%;
-}
-
-@media screen and (max-width: 500px;) {
-  #result {
-    margin-left: 5%;
-  }
 }
