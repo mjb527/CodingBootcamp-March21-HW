@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Password Generator</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- custom style/js -->
+    <link rel="stylesheet" href="static/style.css">
+    <script type="text/javascript" src="static/script.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-sm-0 col-md-3"></div>
+        <div class="col-sm-12 col-md-6">
+            <div class="h2 ml-4">Password Generator</div>
+        </div>
+      </div>
+      <div class="row my-3">
+
+        <div class="col-sm-0 col-md-4">
+          <!-- push form to the right a bit with this div -->
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="charCount">Number of Characters</label>
+              <select class="form-control w-25 mb-2" id="charCount">
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+
+              </select>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="upper">
+                <label for="upper">Include Uppercase Letters</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="number">
+                <label for="number">Include Numbers</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="special">
+                <label for="special">Include Special Characters</label>
+              </div>
+
+            </div>
+            <div class="col-sm-10">
+              <button type="submit" onclick="generatePassword(); return false;" class="btn btn-secondary-outline">Generate Password!</button>
+            </div>
+          </form>
+
+          <div class="row my-4 resultDiv">
+            <div class="col-sm-12 col-md-4 display-inline">Your password:  </div><div class="col-sm-12 col-md-8" id="result"></div>
+          </div>
+
+        </div>
+
+
+
+      </div> <!-- end row -->
+
+      </div>
+      <div class="row">
+        <div class="col-sm-0 col-md-3">
+
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="">
+            <div class="h5 ml-4"><u>Tips for a strong password!</u></div>
+            <ol>
+              <li>A longer password is better and can be harder to guess</li>
+              <li>A mix of letters, numbers, and special characters will create a much stronger password</li>
+              <li>Try and think of a <a href="https://en.wikipedia.org/wiki/Mnemonic">mnemonic device</a> to remember a long password</li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
